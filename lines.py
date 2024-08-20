@@ -1,12 +1,10 @@
 import sys
 def main():
     length=[]
-    comment = ""
-    #check for length of sys.argv and respond accordingly
     if len(sys.argv) < 2:
         sys.exit("Too few command-line arguments")
     elif len(sys.argv) > 2:
-        sys.exit
+        sys.exit("Too many command-line arguments")
     if not sys.argv[1].endswith(".py"):
         sys.exit("Not a Python file")
     else:
@@ -17,6 +15,8 @@ def main():
             continue
         else:
             length.append(line)
+
+    print(len(length))
 
 
 
