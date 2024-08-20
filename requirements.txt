@@ -1,0 +1,2 @@
+None, have python installed properly
+open the file with vscode and run it with python or py
